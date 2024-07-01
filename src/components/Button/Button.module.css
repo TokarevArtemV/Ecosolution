@@ -1,0 +1,66 @@
+.button {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  gap: 12px;
+  transition: var(--transition);
+  background-color: transparent;
+}
+.burger {
+  width: 40px;
+  height: 39px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-green-color);
+  border-radius: 500px;
+}
+.burger:hover {
+  background-color: var(--green-color);
+}
+.getInTouch {
+  width: auto;
+  height: 39px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-color);
+  border-radius: 500px;
+}
+.getInTouch svg {
+  background-color: var(--dark-green-color);
+}
+.getInTouch:hover {
+  background-color: var(--dark-green-color);
+  color: var(--green-color);
+}
+.getInTouch:hover svg {
+  background-color: var(--green-color);
+}
+.menu_close__button {
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  gap: 6px;
+  color: var(--white-color);
+}
+.menu_close__button:hover {
+  color: var(--green-color);
+}
+.learnMore {
+  justify-self: start;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+  padding: 4px 4px 4px 16px;
+  border-radius: 500px;
+  border: 1px solid #97d28b;
+  line-height: 1.125; /* 112.5% */
+  letter-spacing: -0.64px;
+}
+.learnMore:hover {
+  background-color: var(--dark-green-color);
+  border-color: var(--dark-green-color);
+  color: var(--green-color);
+}

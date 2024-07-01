@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.buttonContainer {
+  display: flex;
+  width: auto;
+  gap: 12px;
+}

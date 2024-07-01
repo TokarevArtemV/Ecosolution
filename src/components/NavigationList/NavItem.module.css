@@ -1,0 +1,17 @@
+.nav__list_item {
+  color: var(--white-color);
+  font-size: 24px;
+  letter-spacing: -0.96px;
+  margin-bottom: 8px;
+}
+.nav__list_link {
+  cursor: pointer;
+  margin-right: 8px;
+  color: currentColor;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.nav__list_item:hover a,
+.nav__list_item:hover svg {
+  color: var(--green-color);
+}
