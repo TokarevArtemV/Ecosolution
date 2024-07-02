@@ -1,4 +1,4 @@
-import ValueItem from '../Sections/ValueItem/ValueItem';
+import ValueItem from 'components/ValueItem/ValueItem';
 import image1 from 'assets/images/man-worker-firld-by-solar-panels-1-1x.jpg';
 import image1_2x from 'assets/images/man-worker-firld-by-solar-panels-1-2x.jpg';
 import image2 from 'assets/images/wind-farms-fields-1-1x.jpg';

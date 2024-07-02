@@ -1,4 +1,4 @@
-import Icons from '../../Icons/Icons';
+import Icons from 'components/Icons/Icons';
 import s from './ValueItem.module.css';
 
 const ValueItem = ({ itemData = {} }) => {
