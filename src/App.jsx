@@ -1,5 +1,6 @@
 import AppContainer from './components/AppContainer/AppContainer';
 import Header from './components/Header/Header';
+import AboutSection from './components/Sections/AboutSection/AboutSection';
 import MainSection from './components/Sections/MainSection/MainSection';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <AppContainer>
       <Header />
       <MainSection />
+      <AboutSection />
     </AppContainer>
   );
 }

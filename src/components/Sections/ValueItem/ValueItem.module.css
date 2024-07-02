@@ -1,0 +1,99 @@
+.section__about_item {
+  background-color: var(--gray-color);
+}
+.section__about_item_title {
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.section__about_item_title svg {
+  margin-right: 8px;
+}
+.section__about_item_text {
+  text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  .section__about_item {
+    padding: 12px 12px;
+  }
+  .section__about_item_title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 33px;
+    margin-bottom: 12px;
+  }
+  .section__about_item_title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--green-color);
+  }
+  .section__about_item_text {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section__about_item {
+    padding: 12px 12px;
+  }
+  .section__about_item_title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.33;
+    padding-bottom: 51px;
+    margin-bottom: 12px;
+  }
+  .section__about_item_title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--green-color);
+  }
+  .section__about_item_text {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section__about_item {
+    padding: 48px 24px;
+  }
+  .section__about_item_title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 32px;
+    line-height: 1.5;
+    padding-bottom: 94px;
+    margin-bottom: 24px;
+  }
+  .section__about_item_title svg {
+    width: 24px;
+    height: 24px;
+  }
+  .section__about_item_title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--green-color);
+  }
+  .section__about_item_text {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
+}

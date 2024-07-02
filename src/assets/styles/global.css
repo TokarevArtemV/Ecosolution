@@ -3,6 +3,7 @@
   --light-green-color: #dcefd8;
   --green-color: #97d28b;
   --dark-green-color: #173d33;
+  --gray-color: #eaedf1;
   --background-color: #f3f5fa;
 
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -33,4 +34,6 @@ h6 {
   font-family: 'Oswald', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

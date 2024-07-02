@@ -31,6 +31,7 @@ const MainSection = () => {
         </a>
         <p className={s.section__main_ownership}>ecosolution &#169; 2023</p>
       </div>
+      <div className={s.section__main_image_container}></div>
     </section>
   );
 };
