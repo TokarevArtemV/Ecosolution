@@ -1,14 +1,21 @@
+import Icons from '../Icons/Icons';
 import s from './Logo.module.css';
-import { ReactComponent as Logo } from 'assets/logo.svg';
 
-const LogoSVG = ({ width = '', height = '', className = '#' }) => {
+const LogoSVG = ({ width = '', height = '', className = '', ...rest }) => {
   return (
     <div
       className={`${s.logoContainer} ${className ? s[className] : ''}`}
       width={width}
       height={height}
     >
-      <Logo width={width} height={height} />
+      <Icons
+        id="icon-logo"
+        size={width}
+        height={height}
+        fill="none"
+        stroke="none"
+        {...rest}
+      />
     </div>
   );
 };

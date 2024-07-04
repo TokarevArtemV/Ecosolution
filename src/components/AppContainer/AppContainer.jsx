@@ -1,10 +1,10 @@
 import 'normalize.css';
 import s from './AppContainer.module.css';
 
-const AppContainer = ({ children, className }) => {
-  const containerClasses = `${s.container} ${s[className]}`;
+const AppContainer = ({ children, className = '' }) => {
+  const containerClasses = `${s.container} ${className && s[className]}`;
 
-  return <div className={containerClasses}>{children}</div>;
+  return <main className={containerClasses}>{children}</main>;
 };
 
 export default AppContainer;

@@ -11,7 +11,10 @@
   text-decoration: none;
   transition: var(--transition);
 }
-.nav__list_item:hover a,
-.nav__list_item:hover svg {
-  color: var(--green-color);
+
+@media (hover: hover) {
+  .nav__list_item:hover a,
+  .nav__list_item:hover svg {
+    color: var(--green-color);
+  }
 }

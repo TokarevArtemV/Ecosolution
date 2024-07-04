@@ -11,6 +11,7 @@ const NavItem = ({ title, link, onClose }) => {
         smooth={true}
         duration={1000}
         onClick={onClose}
+        offset={-50}
       >
         {title}
       </Link>

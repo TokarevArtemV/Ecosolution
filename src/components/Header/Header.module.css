@@ -1,10 +1,22 @@
-header {
+.header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  padding: 36px 36px 10px 36px;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  background-color: var(--background-color);
 }
 .buttonContainer {
   display: flex;
   width: auto;
   gap: 12px;
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 24px 20px 10px;
+  }
 }

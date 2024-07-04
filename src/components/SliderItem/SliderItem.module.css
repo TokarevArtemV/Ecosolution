@@ -1,0 +1,103 @@
+.section__cases_slider_item {
+  background-color: #eaedf1;
+}
+.section__cases_slider_item_info_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.section__cases_slider_item_info_title {
+  text-align: justify;
+}
+.section__cases_slider_item_element {
+  position: relative;
+  grid-column: 1/3;
+}
+.section__cases_slider_item_element::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--green-color);
+}
+.section__cases_slider_item_info_text {
+  justify-self: start;
+  text-align: justify;
+}
+.section__cases_slider_item_info_date {
+  justify-self: end;
+  text-align: justify;
+}
+@media screen and (max-width: 767px) {
+  .section__cases_slider_item_info_container {
+    row-gap: 17px;
+    padding: 24px 12px 12px;
+  }
+  .section__cases_slider_item_info_title {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+  }
+  .section__cases_slider_item_element::after {
+    top: 0;
+    left: 0;
+  }
+  .section__cases_slider_item_info_text {
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+  .section__cases_slider_item_info_date {
+    font-size: 12px;
+    letter-spacing: -0.48px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section__cases_slider_item_info_container {
+    row-gap: 15px;
+    padding: 24px 12px 12px;
+  }
+  .section__cases_slider_item_info_title {
+    min-height: 72px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+  .section__cases_slider_item_element::after {
+    top: 1px;
+    width: 100%;
+  }
+  .section__cases_slider_item_info_text {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
+  .section__cases_slider_item_info_date {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section__cases_slider_item_info_container {
+    row-gap: 30.5px;
+    padding: 36px 48px;
+  }
+  .section__cases_slider_item_info_title {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+  .section__cases_slider_item_element::after {
+    top: 5.5px;
+    width: 100%;
+  }
+  .section__cases_slider_item_info_text {
+    letter-spacing: -0.64px;
+  }
+  .section__cases_slider_item_info_date {
+    letter-spacing: -0.64px;
+  }
+}
+@media (hover: hover) {
+  .section__cases_slider_item:hover {
+    cursor: pointer;
+  }
+  .section__cases_slider_item:hover button {
+    color: var(--green-color);
+    background-color: var(--dark-green-color);
+  }
+}
