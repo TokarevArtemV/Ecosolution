@@ -19,9 +19,9 @@ const Icons = ({
     fill={fill}
     stroke={stroke}
     style={{
-      transform: `rotate(${rotation}deg)`,
-      borderRadius: `${iconBorderRadius}px`,
-      backgroundColor: bgColor ? bgColor : '',
+      ...(rotation && { transform: `rotate(${rotation}deg)` }),
+      ...(iconBorderRadius && { borderRadius: `${iconBorderRadius}px` }),
+      ...(bgColor && { backgroundColor: bgColor }),
     }}
   >
     <use href={`${IconsSprite}#${id}`} />

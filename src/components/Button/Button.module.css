@@ -29,6 +29,17 @@
 .getInTouch svg {
   background-color: var(--dark-green-color);
 }
+.contactUs {
+  width: auto;
+  height: 39px;
+  padding: 10px 16px;
+  justify-content: center;
+  background-color: var(--green-color);
+  border-radius: 500px;
+}
+.contactUs svg {
+  background-color: var(--dark-green-color);
+}
 .menu_close__button {
   font-size: 20px;
   letter-spacing: -0.8px;
@@ -84,6 +95,13 @@
     color: var(--green-color);
   }
   .getInTouch:hover svg {
+    background-color: var(--green-color);
+  }
+  .contactUs:hover {
+    background-color: var(--dark-green-color);
+    color: var(--green-color);
+  }
+  .contactUs:hover svg {
     background-color: var(--green-color);
   }
   .menu_close__button:hover {

@@ -9,7 +9,6 @@ import {
 } from './CarouselSelectedSnapDisplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import SliderItem from '../SliderItem/SliderItem';
-import { CASES_LIST } from '../../helpers/cases';
 import s from './CarouselSlider.module.css';
 
 const CarouselSlaider = (props) => {
@@ -39,9 +38,9 @@ const CarouselSlaider = (props) => {
       <div className={s.section__cases_slider}>
         <div className={s.section__cases_slider_viewport} ref={emblaRef}>
           <div className={s.section__cases_slider_container}>
-            {slides.map((index) => (
+            {slides.map((slide, index) => (
               <div className={s.section__cases_slider_slide} key={index}>
-                <SliderItem itemData={CASES_LIST[index]} />
+                <SliderItem itemData={slide} />
               </div>
             ))}
           </div>
