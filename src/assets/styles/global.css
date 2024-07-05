@@ -4,8 +4,9 @@
   --green-color: #97d28b;
   --dark-green-color: #173d33;
   --gray-color: #eaedf1;
+  --error-color: #d28b8b;
   --background-color: #f3f5fa;
-
+  --disabled-color: rgba(16, 16, 16, 0.3);
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --backdrop: rgba(23, 61, 51, 0.25);
   --box-shadow: 0px 4px 8px 0px rgba(64, 123, 255, 0.34);

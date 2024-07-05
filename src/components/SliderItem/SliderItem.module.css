@@ -1,5 +1,5 @@
 .section__cases_slider_item {
-  background-color: #eaedf1;
+  background-color: var(--gray-color);
 }
 .section__cases_slider_item_info_container {
   display: grid;

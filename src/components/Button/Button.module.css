@@ -54,7 +54,7 @@
   padding: 4px 4px 4px 16px;
   border-radius: 500px;
   border: 1px solid #97d28b;
-  line-height: 1.125; /* 112.5% */
+  line-height: 1.125;
   letter-spacing: -0.64px;
 }
 .section__cases_slider_button {
@@ -69,6 +69,12 @@
   color: var(--dark-green-color);
   border-radius: 50%;
   background-color: var(--green-color);
+}
+.learnMore:disabled:hover {
+  background-color: transparent;
+  color: var(--disabled-color);
+  border: 1px solid #97d28b;
+  cursor: not-allowed;
 }
 
 @media screen and (max-width: 767px) {

@@ -13,8 +13,8 @@
 }
 
 @media (hover: hover) {
-  .nav__list_item:hover a,
-  .nav__list_item:hover svg {
+  .nav__list_item a:hover + svg,
+  .nav__list_item a:hover {
     color: var(--green-color);
   }
 }

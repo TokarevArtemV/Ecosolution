@@ -5,6 +5,7 @@ import AboutSection from './components/Sections/AboutSection/AboutSection';
 import ElectricitySection from './components/Sections/ElectricitySection/ElectricitySection';
 import CasesSection from './components/Sections/CasesSection/CasesSection';
 import FaqSection from './components/Sections/FaqSection/FaqSection';
+import ContactSection from './components/Sections/ContactSection/ContactSection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ElectricitySection />
         <CasesSection />
         <FaqSection />
+        <ContactSection />
       </AppContainer>
     </>
   );
