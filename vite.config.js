@@ -8,9 +8,14 @@ export default defineConfig({
     alias: {
       src: '/src',
       components: '/src/components',
-      pages: '/src/pages',
       assets: '/src/assets',
+      helpers: './src/helpers',
     },
   },
   base: '',
+  build: {
+    rollupOptions: {
+      external: ['@chatscope/chat-ui-kit-styles'],
+    },
+  },
 });

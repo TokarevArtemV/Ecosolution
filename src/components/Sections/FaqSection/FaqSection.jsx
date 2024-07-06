@@ -15,7 +15,12 @@ const FaqSection = () => {
         <p className={s.section__faq_title__text}>
           Didn't find the answer to your question?
         </p>
-        <Link to={MENU_LINKS.contact.link} smooth={true} duration={1000}>
+        <Link
+          to={MENU_LINKS.contact.link}
+          smooth={true}
+          duration={1000}
+          offset={-50}
+        >
           <Button className="contactUs" title="Contact Us">
             <Icons
               id="arrow"

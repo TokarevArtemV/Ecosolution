@@ -11,6 +11,19 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
+.modal__form_overlay {
+  display: flex;
+  z-index: var(--z-index-modal);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--backdrop);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 .ReactModal__Overlay--after-open {
   opacity: 1;
 }
@@ -24,6 +37,26 @@
   height: 100%;
   transform: translateY(-50px);
   transition: transform 0.3s;
+}
+.modal__form_content {
+  display: flex;
+  margin: auto auto;
+  transform: translateY(-50px);
+  transition: transform 0.3s;
+}
+.modal_form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--background-color);
+  border-radius: 40px;
+}
+.modal_form_text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
 }
 .ReactModal__Content--after-open {
   transform: translateY(0);

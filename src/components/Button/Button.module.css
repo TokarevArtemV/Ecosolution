@@ -85,7 +85,15 @@
   border: 1px solid #97d28b;
   cursor: not-allowed;
 }
-
+.modal_form_button {
+  width: auto;
+  height: 39px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-color);
+  border-radius: 500px;
+}
 @media screen and (max-width: 767px) {
   .getInTouch {
     display: none;
@@ -134,5 +142,9 @@
     color: var(--green-color);
     box-shadow: inset 0 0 0 1px var(--green-color);
     border-radius: 50%;
+  }
+  .modal_form_button:hover {
+    background-color: var(--dark-green-color);
+    color: var(--green-color);
   }
 }

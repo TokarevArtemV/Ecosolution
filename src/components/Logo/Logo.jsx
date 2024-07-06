@@ -1,22 +1,26 @@
+import { Link } from 'react-router-dom';
 import Icons from '../Icons/Icons';
 import s from './Logo.module.css';
 
 const LogoSVG = ({ width = '', height = '', className = '', ...rest }) => {
   return (
-    <div
-      className={`${s.logoContainer} ${className ? s[className] : ''}`}
-      width={width}
-      height={height}
-    >
-      <Icons
-        id="icon-logo"
-        size={width}
+    <Link to="/">
+      <div
+        className={`${s.logoContainer} ${className ? s[className] : ''}`}
+        width={width}
         height={height}
-        fill="none"
-        stroke="none"
-        {...rest}
-      />
-    </div>
+      >
+        <Icons
+          className="logo_svg"
+          id="icon-logo"
+          size={width}
+          height={height}
+          fill="var(--dark-green-color)"
+          stroke="none"
+          {...rest}
+        />
+      </div>
+    </Link>
   );
 };
 

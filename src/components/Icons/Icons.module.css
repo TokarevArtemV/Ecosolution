@@ -2,6 +2,12 @@ svg {
   flex-shrink: 0;
   transition: var(--transition);
 }
+@media (hover: hover) {
+  .logo_svg:hover {
+    fill: var(--green-color);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .section__faq_item__icon {
     position: absolute;

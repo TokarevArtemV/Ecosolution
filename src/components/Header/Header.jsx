@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import Modal from 'react-modal';
 import LogoSVG from '../Logo/Logo';
 import Button from '../Button/Button';
 import Icons from '../Icons/Icons';
-import Modal from 'react-modal';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
-import s from './Header.module.css';
 import { Link } from 'react-scroll';
 import { MENU_LINKS } from '../../helpers/links';
+import s from './Header.module.css';
 
 Modal.setAppElement('#root');
 
@@ -30,7 +30,12 @@ const Header = () => {
             <Icons id="menu" stroke="var(--dark-green-color)" fill="none" />
           </Button>
 
-          <Link to={MENU_LINKS.contact.link} smooth={true} duration={1000}>
+          <Link
+            to={MENU_LINKS.contact.link}
+            smooth={true}
+            duration={1000}
+            offset={-50}
+          >
             <Button className="getInTouch" title="Get in touch">
               <Icons
                 id="arrow"
