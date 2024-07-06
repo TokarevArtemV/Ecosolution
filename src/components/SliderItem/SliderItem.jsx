@@ -40,7 +40,7 @@ const SliderItem = ({ itemData = {} }) => {
         </h3>
         <Button className="section__cases_slider_item_button">
           <Icons
-            id="arrow-right"
+            id="arrow"
             size="36"
             stroke="currentColor"
             fill="none"

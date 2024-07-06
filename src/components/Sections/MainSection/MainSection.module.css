@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 767px) {
   .section__main {
-    padding-top: 146px;
+    padding-top: 222px;
   }
   .section__main_text_container {
     column-gap: 24px;
@@ -90,7 +90,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .section__main {
-    padding-top: 164px;
+    padding-top: 240px;
   }
   .section__main_text_container {
     grid-template-columns: repeat(2, 1fr);
@@ -146,7 +146,7 @@
 
 @media screen and (min-width: 1280px) {
   .section__main {
-    padding-top: 200px;
+    padding-top: 264px;
   }
   .section__main_text_container {
     grid-template-columns: repeat(3, 1fr);

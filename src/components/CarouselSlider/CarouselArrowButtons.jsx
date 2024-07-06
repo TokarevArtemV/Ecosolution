@@ -42,7 +42,7 @@ export const PrevButton = (props) => {
   return (
     <Button className="section__cases_slider_button" {...restProps}>
       <Icons
-        id="arrow-right"
+        id="arrow"
         size="36"
         stroke="currentColor"
         fill="none"
@@ -57,7 +57,7 @@ export const NextButton = (props) => {
 
   return (
     <Button className="section__cases_slider_button" {...restProps}>
-      <Icons id="arrow-right" size="36" stroke="currentColor" fill="none" />
+      <Icons id="arrow" size="36" stroke="currentColor" fill="none" />
     </Button>
   );
 };

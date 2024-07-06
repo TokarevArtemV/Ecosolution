@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import Logo from '../Logo/Logo';
+import LogoSVG from '../Logo/Logo';
 import Button from '../Button/Button';
 import Icons from '../Icons/Icons';
 import Modal from 'react-modal';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import s from './Header.module.css';
+import { Link } from 'react-scroll';
+import { MENU_LINKS } from '../../helpers/links';
 
 Modal.setAppElement('#root');
 
@@ -22,22 +24,24 @@ const Header = () => {
   return (
     <>
       <header className={s.header}>
-        <Logo width={269} height={40} />
+        <LogoSVG width={269} height={40} />
         <div className={s.buttonContainer}>
           <Button className="burger" onClick={openModal}>
             <Icons id="menu" stroke="var(--dark-green-color)" fill="none" />
           </Button>
 
-          <Button className="getInTouch" title="Get in touch">
-            <Icons
-              id="arrow"
-              size="14"
-              stroke="var(--dark-green-color)"
-              fill="none"
-              rotation="90"
-              iconBorderRadius="500"
-            />
-          </Button>
+          <Link to={MENU_LINKS.contact.link} smooth={true} duration={1000}>
+            <Button className="getInTouch" title="Get in touch">
+              <Icons
+                id="arrow"
+                size="14"
+                stroke="var(--dark-green-color)"
+                fill="none"
+                rotation="90"
+                iconBorderRadius="500"
+              />
+            </Button>
+          </Link>
         </div>
       </header>
 

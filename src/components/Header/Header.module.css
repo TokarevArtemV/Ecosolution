@@ -2,7 +2,6 @@
   z-index: 1;
   position: fixed;
   top: 0;
-  padding: 36px 36px 10px 36px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -14,6 +13,16 @@
   display: flex;
   width: auto;
   gap: 12px;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 36px 20px 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    padding: 36px 30px 10px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .header {

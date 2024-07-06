@@ -17,6 +17,15 @@
   background-color: var(--light-green-color);
   border-radius: 500px;
 }
+.scrollUp {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-green-color);
+  border-radius: 500px;
+}
 .getInTouch {
   width: auto;
   height: 39px;
@@ -94,6 +103,9 @@
 }
 @media (hover: hover) {
   .burger:hover {
+    background-color: var(--green-color);
+  }
+  .scrollUp:hover {
     background-color: var(--green-color);
   }
   .getInTouch:hover {

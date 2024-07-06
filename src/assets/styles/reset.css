@@ -27,6 +27,10 @@ button {
   padding: 0;
   cursor: pointer;
 }
+input {
+  padding: 0;
+  margin: 0;
+}
 *,
 *::before,
 *::after {

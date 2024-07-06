@@ -4,6 +4,7 @@ import { FAQ_LIST } from '../../../helpers/faqList.js';
 import s from './FaqSection.module.css';
 import Button from '../../Button/Button';
 import Icons from '../../Icons/Icons';
+import { Link } from 'react-scroll';
 
 const FaqSection = () => {
   return (
@@ -14,16 +15,18 @@ const FaqSection = () => {
         <p className={s.section__faq_title__text}>
           Didn't find the answer to your question?
         </p>
-        <Button className="contactUs" title="Contact Us">
-          <Icons
-            id="arrow"
-            size="14"
-            stroke="var(--dark-green-color)"
-            fill="none"
-            rotation="90"
-            iconBorderRadius="500"
-          />
-        </Button>
+        <Link to={MENU_LINKS.contact.link} smooth={true} duration={1000}>
+          <Button className="contactUs" title="Contact Us">
+            <Icons
+              id="arrow"
+              size="14"
+              stroke="var(--dark-green-color)"
+              fill="none"
+              rotation="90"
+              iconBorderRadius="500"
+            />
+          </Button>
+        </Link>
       </div>
     </section>
   );

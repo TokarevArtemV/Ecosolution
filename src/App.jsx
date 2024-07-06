@@ -6,19 +6,23 @@ import ElectricitySection from './components/Sections/ElectricitySection/Electri
 import CasesSection from './components/Sections/CasesSection/CasesSection';
 import FaqSection from './components/Sections/FaqSection/FaqSection';
 import ContactSection from './components/Sections/ContactSection/ContactSection';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
       <Header />
-      <AppContainer>
-        <MainSection />
-        <AboutSection />
-        <ElectricitySection />
-        <CasesSection />
-        <FaqSection />
-        <ContactSection />
-      </AppContainer>
+      <main>
+        <AppContainer>
+          <MainSection />
+          <AboutSection />
+          <ElectricitySection />
+          <CasesSection />
+          <FaqSection />
+          <ContactSection />
+        </AppContainer>
+      </main>
+      <Footer />
     </>
   );
 }
