@@ -23,6 +23,10 @@
   padding-bottom: 8px;
   border-bottom: 1px solid var(--green-color);
 }
+.section__contact_form_input {
+  outline: none;
+  box-shadow: 0 0 0 1000px var(--gray-color) inset;
+}
 .section__contact_form_input.error {
   border-color: var(--error-color);
 }
@@ -35,6 +39,8 @@
   letter-spacing: -0.72px;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid var(--green-color);
+  outline: none;
 }
 .section__contact_form_error_container {
   position: absolute;

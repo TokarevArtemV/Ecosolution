@@ -3,7 +3,7 @@ import { MENU_LINKS } from '../../../helpers/links';
 import { CASES_LIST } from '../../../helpers/cases';
 import s from './CasesSection.module.css';
 
-const OPTIONS = { align: 'start', dragFree: true, loop: true };
+const OPTIONS = { align: 'start', dragFree: false, loop: true };
 
 const CasesSection = () => {
   return (
