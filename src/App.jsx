@@ -1,29 +1,15 @@
-import AppContainer from './components/AppContainer/AppContainer';
-import Header from './components/Header/Header';
-import MainSection from './components/Sections/MainSection/MainSection';
-import AboutSection from './components/Sections/AboutSection/AboutSection';
-import ElectricitySection from './components/Sections/ElectricitySection/ElectricitySection';
-import CasesSection from './components/Sections/CasesSection/CasesSection';
-import FaqSection from './components/Sections/FaqSection/FaqSection';
-import ContactSection from './components/Sections/ContactSection/ContactSection';
-import Footer from './components/Footer/Footer';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import SharedLayout from './components/SharedLayout/SharedLayout';
+import MainPage from './pages/MainPage/MainPage';
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <AppContainer>
-          <MainSection />
-          <AboutSection />
-          <ElectricitySection />
-          <CasesSection />
-          <FaqSection />
-          <ContactSection />
-        </AppContainer>
-      </main>
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<MainPage />} />
+      </Route>
+      <Route path="*" element={<Navigate to={'/'} />} />
+    </Routes>
   );
 }
 export default App;

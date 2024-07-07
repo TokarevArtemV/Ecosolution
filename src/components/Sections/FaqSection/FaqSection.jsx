@@ -1,10 +1,10 @@
+import { Link } from 'react-scroll';
 import FaqList from '../../FaqList/FaqList';
 import { MENU_LINKS } from '../../../helpers/links';
 import { FAQ_LIST } from '../../../helpers/faqList.js';
-import s from './FaqSection.module.css';
 import Button from '../../Button/Button';
 import Icons from '../../Icons/Icons';
-import { Link } from 'react-scroll';
+import s from './FaqSection.module.css';
 
 const FaqSection = () => {
   return (

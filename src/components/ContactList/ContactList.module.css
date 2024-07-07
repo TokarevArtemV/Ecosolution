@@ -62,3 +62,8 @@
     height: 24px;
   }
 }
+@media (hover: hover) {
+  .section__contact_social a:hover > svg {
+    color: var(--green-color);
+  }
+}

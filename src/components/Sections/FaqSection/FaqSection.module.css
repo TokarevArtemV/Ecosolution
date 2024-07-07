@@ -7,6 +7,7 @@
 }
 .section__faq__button_container {
   display: grid;
+  justify-items: center;
 }
 @media screen and (max-width: 767px) {
   .section__faq {
@@ -23,9 +24,6 @@
     text-align: center;
     font-size: 18px;
     letter-spacing: -0.72px;
-  }
-  .section__faq__button_container {
-    justify-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -45,9 +43,6 @@
     font-size: 18px;
     letter-spacing: -0.72px;
   }
-  .section__faq__button_container {
-    justify-items: start;
-  }
 }
 @media screen and (min-width: 1280px) {
   .section__faq {
@@ -58,7 +53,11 @@
     column-gap: 48px;
   }
   .section__faq_title {
-    max-width: 398px;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-self: end;
+    padding-right: 60px;
+    width: 460px;
     font-size: 48px;
     line-height: 1;
   }
@@ -69,6 +68,13 @@
     letter-spacing: -0.96px;
   }
   .section__faq__button_container {
-    justify-items: center;
+    display: grid;
+    grid-template-columns: 400px;
+    justify-self: end;
+    padding-right: 60px;
+  }
+  .section__faq_title__text {
+    width: 400px;
+    text-align: left;
   }
 }

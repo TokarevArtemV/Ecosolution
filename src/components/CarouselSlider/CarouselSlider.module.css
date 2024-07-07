@@ -60,7 +60,9 @@
     --slide-size: 50%;
   }
   .section__cases_slider_controls {
+    justify-self: end;
     justify-content: end;
+    width: 460px;
     gap: 193px;
   }
   .section__cases_slider_buttons {

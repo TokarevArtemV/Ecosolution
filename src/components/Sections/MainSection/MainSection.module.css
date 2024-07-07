@@ -149,7 +149,7 @@
     padding-top: 264px;
   }
   .section__main_text_container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 460px;
     justify-items: start;
     row-gap: 24px;
     padding-bottom: 24px;
@@ -172,7 +172,7 @@
   }
   .section__main_info_container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr) 230px 230px;
     padding-top: 16px;
     padding-bottom: 36px;
   }

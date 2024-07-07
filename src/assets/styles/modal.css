@@ -9,7 +9,7 @@
   background: var(--backdrop);
   backdrop-filter: blur(2px);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 .modal__form_overlay {
   display: flex;
@@ -22,7 +22,7 @@
   background: var(--backdrop);
   backdrop-filter: blur(2px);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 .ReactModal__Overlay--after-open {
   opacity: 1;
@@ -35,14 +35,14 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  transform: translateY(-50px);
-  transition: transform 0.3s;
+  transform: translateY(-150px);
+  transition: transform 0.5s;
 }
 .modal__form_content {
   display: flex;
   margin: auto auto;
-  transform: translateY(-50px);
-  transition: transform 0.3s;
+  transform: translateY(-150px);
+  transition: transform 0.5s;
 }
 .modal_form_container {
   display: flex;
@@ -62,7 +62,7 @@
   transform: translateY(0);
 }
 .ReactModal__Content--before-close {
-  transform: translateY(-50px);
+  transform: translateY(-150px);
 }
 @media screen and (max-width: 767px) {
   .modal__content {

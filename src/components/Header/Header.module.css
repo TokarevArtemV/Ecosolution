@@ -1,12 +1,14 @@
 .header {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
   background-color: var(--background-color);
 }
 .buttonContainer {
@@ -16,16 +18,19 @@
 }
 @media screen and (max-width: 767px) {
   .header {
+    max-width: 480px;
     padding: 36px 20px 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .header {
+    max-width: 768px;
     padding: 36px 30px 10px;
   }
 }
 @media screen and (min-width: 1280px) {
   .header {
+    max-width: 1240px;
     padding: 24px 20px 10px;
   }
 }

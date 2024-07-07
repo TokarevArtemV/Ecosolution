@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 1280px) {
   .footer_container {
-    grid-template-columns: repeat(2, 1fr) 0.5fr 0.5fr;
+    grid-template-columns: repeat(2, 1fr) 230px 230px;
     align-items: center;
     row-gap: 16px;
     margin-top: 68px;
@@ -109,5 +109,10 @@
   }
   .footer_copyright {
     justify-self: end;
+  }
+}
+@media (hover: hover) {
+  .footer_social_container a:hover > svg {
+    color: var(--green-color);
   }
 }

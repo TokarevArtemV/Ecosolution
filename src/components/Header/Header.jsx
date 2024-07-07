@@ -33,7 +33,7 @@ const Header = () => {
           <Link
             to={MENU_LINKS.contact.link}
             smooth={true}
-            duration={1000}
+            duration={2000}
             offset={-50}
           >
             <Button className="getInTouch" title="Get in touch">
