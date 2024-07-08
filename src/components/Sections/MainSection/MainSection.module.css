@@ -1,6 +1,3 @@
-.section__main {
-  letter-spacing: -0.64px;
-}
 .section__main_text_container {
   display: grid;
 }
@@ -39,9 +36,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .section__main {
-    padding-top: 222px;
-  }
   .section__main_text_container {
     column-gap: 24px;
     padding-bottom: 24px;
@@ -89,9 +83,6 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .section__main {
-    padding-top: 240px;
-  }
   .section__main_text_container {
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
@@ -145,9 +136,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .section__main {
-    padding-top: 264px;
-  }
   .section__main_text_container {
     grid-template-columns: 1fr 1fr 460px;
     justify-items: start;

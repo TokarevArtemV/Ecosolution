@@ -1,3 +1,4 @@
+import Section from '../Section';
 import ValuesList from '../../ValuesList/ValuesList';
 import { MENU_LINKS } from '../../../helpers/links';
 import { VALUES_LIST } from '../../../helpers/values.js';
@@ -5,7 +6,7 @@ import s from './AboutSection.module.css';
 
 const AboutSection = () => {
   return (
-    <section id={MENU_LINKS.about.link} className={s.section__about}>
+    <Section item={MENU_LINKS.about}>
       <div className={s.section__about_title_container}>
         <h2 className={s.section__about_title}>Main values of our company</h2>
         <p className={s.section__about_text}>
@@ -17,7 +18,7 @@ const AboutSection = () => {
         </p>
         <ValuesList listObj={VALUES_LIST} />
       </div>
-    </section>
+    </Section>
   );
 };
 

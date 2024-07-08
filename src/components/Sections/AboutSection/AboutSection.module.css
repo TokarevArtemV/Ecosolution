@@ -3,9 +3,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .section__about {
-    padding-top: 36px;
-  }
   .section__about_text {
     margin-bottom: 36px;
   }
@@ -22,9 +19,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .section__about {
-    padding-top: 100px;
-  }
   .section__about_title_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -44,9 +38,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .section__about {
-    padding-top: 36px;
-  }
   .section__about_title_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

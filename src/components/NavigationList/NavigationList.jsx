@@ -11,6 +11,7 @@ const NavigationList = ({ itemList = {}, onClose }) => {
               key={index}
               title={itemList[item].title}
               link={itemList[item].link}
+              skipItem={itemList[item].skip}
               onClose={onClose}
             />
           ))}

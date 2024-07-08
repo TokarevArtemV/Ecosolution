@@ -1,14 +1,15 @@
 import { Link } from 'react-scroll';
+import Section from '../Section';
 import FaqList from '../../FaqList/FaqList';
-import { MENU_LINKS } from '../../../helpers/links';
-import { FAQ_LIST } from '../../../helpers/faqList.js';
 import Button from '../../Button/Button';
 import Icons from '../../Icons/Icons';
+import { MENU_LINKS } from '../../../helpers/links';
+import { FAQ_LIST } from '../../../helpers/faqList.js';
 import s from './FaqSection.module.css';
 
 const FaqSection = () => {
   return (
-    <section id={MENU_LINKS.faq.link} className={s.section__faq}>
+    <Section item={MENU_LINKS.faq}>
       <h2 className={s.section__faq_title}>Frequently Asked Questions</h2>
       <FaqList listData={FAQ_LIST} />
       <div className={s.section__faq__button_container}>
@@ -33,7 +34,7 @@ const FaqSection = () => {
           </Button>
         </Link>
       </div>
-    </section>
+    </Section>
   );
 };
 

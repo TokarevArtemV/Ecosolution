@@ -1,12 +1,13 @@
+import { Link } from 'react-scroll';
+import Section from '../Section';
 import Button from '../../Button/Button';
 import Icons from '../../Icons/Icons';
 import { MENU_LINKS } from '../../../helpers/links.js';
 import s from './MainSection.module.css';
-import { Link } from 'react-scroll';
 
 const MainSection = () => {
   return (
-    <section id={MENU_LINKS.main.link} className={s.section__main}>
+    <Section item={MENU_LINKS.main}>
       <div className={s.section__main_text_container}>
         <h1 className={s.section__main_title}>RENEWABLE ENERGY For any task</h1>
         <p className={s.section__main_text}>
@@ -40,7 +41,7 @@ const MainSection = () => {
         <p className={s.section__main_ownership}>ecosolution &#169; 2023</p>
       </div>
       <div className={s.section__main_image_container}></div>
-    </section>
+    </Section>
   );
 };
 

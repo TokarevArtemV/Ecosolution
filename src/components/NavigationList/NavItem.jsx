@@ -1,10 +1,17 @@
 import { Link } from 'react-scroll';
+import { useActiveSection } from '../../hooks/ActiveSectionContext';
 import Icons from '../Icons/Icons';
 import s from './NavItem.module.css';
 
-const NavItem = ({ title, link, onClose }) => {
+const NavItem = ({ title, link, skipItem = false, onClose }) => {
+  const { activeSection } = useActiveSection();
+
+  if (skipItem) return;
+
   return (
-    <li className={s.nav__list_item}>
+    <li
+      className={`${s.nav__list_item}  ${activeSection === link && s.active}`}
+    >
       <Link
         className={s.nav__list_link}
         to={link}

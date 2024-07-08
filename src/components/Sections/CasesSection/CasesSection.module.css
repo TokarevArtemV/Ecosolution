@@ -1,11 +1,4 @@
-.section__cases_title {
-  line-height: 1;
-  text-transform: uppercase;
-}
 @media screen and (max-width: 767px) {
-  .section__cases {
-    padding-top: 36px;
-  }
   .section__cases_title {
     margin-bottom: 24px;
     max-width: 264px;
@@ -13,14 +6,6 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .section__cases {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-    row-gap: 38px;
-    padding-top: 100px;
-  }
   .section__cases_title {
     max-width: 264px;
     font-size: 36px;
@@ -36,14 +21,6 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .section__cases {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 48px;
-    row-gap: 114px;
-    padding-top: 120px;
-  }
   .section__cases::after {
     content: '';
     position: absolute;

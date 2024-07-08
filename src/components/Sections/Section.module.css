@@ -1,0 +1,104 @@
+.section__main {
+  letter-spacing: -0.64px;
+}
+.section__cases_title {
+  line-height: 1;
+  text-transform: uppercase;
+}
+.section__faq {
+  position: relative;
+  display: grid;
+}
+.section__contact {
+  display: grid;
+  justify-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .section__main {
+    padding-top: 222px;
+  }
+  .section__about {
+    padding-top: 36px;
+  }
+  .section__electricity {
+    padding-top: 36px;
+  }
+  .section__cases {
+    padding-top: 36px;
+  }
+  .section__faq {
+    place-items: center;
+    padding-top: 36px;
+  }
+  .section__contact {
+    padding-top: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section__main {
+    padding-top: 240px;
+  }
+  .section__about {
+    padding-top: 100px;
+  }
+  .section__electricity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+  .section__cases {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 38px;
+    padding-top: 100px;
+  }
+  .section__faq {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    padding-top: 36px;
+    column-gap: 24px;
+  }
+  .section__contact {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section__main {
+    padding-top: 264px;
+  }
+  .section__about {
+    padding-top: 36px;
+  }
+  .section__electricity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .section__cases {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    row-gap: 114px;
+    padding-top: 120px;
+  }
+  .section__faq {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    padding-top: 36px;
+    column-gap: 48px;
+  }
+  .section__contact {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    padding-top: 120px;
+  }
+}
