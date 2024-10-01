@@ -15,9 +15,8 @@ const SharedLayout = () => {
           </Suspense>
         </AppContainer>
       </main>
-      <AppContainer>
-        <Footer />
-      </AppContainer>
+
+      <Footer />
     </>
   );
 };
